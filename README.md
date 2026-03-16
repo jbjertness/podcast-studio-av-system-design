@@ -1,30 +1,21 @@
 # Multi-Use Broadcast & Recording Studio System Design
-This project documents a proposed audio, video, networking, and lighting architecture for a flexible multi-purpose production environment consisting of a studio, live room, and event hall.
+Several years back, I was challenged to build a multi-use production studio under a conservative budge.
+It was tough—but incredibly fun, and the result is a highly adaptable AV + lighting + networking setup that supports a main studio, attached live room, and flexible event hall—all engineered to handle a wide (and unpredictable) range of production needs: such as podcasts, live streams, music production/band tracking, corporate events, and beyond.
 
-I designed this system with an emphasis on modularity, and as a result upports a variety of production scenarios including:
-
-- Podcast recording
-- Music Production
-- Live streaming
-- Remote Production
-- Multi-camera broadcast production
-- Remote guest integration
-
-The system leverages modern broadcast and AV technologies such as Dante, NDI, POE, and 12gSDI to create a scalable and adaptable production workflow.
+I'm sharing this repo to act as a template for others and will include architecture, diagrams, equipment lists, wiring plans, and rationale so others can replicate, adapt, or improve it.
 
 ## System Overview
 
-The studio supports:
-The studio is designed around a centralized production control room that manages audio mixing, video switching, recording, and live streaming for an attached live room and seperated event space. 
+The system leverages modern broadcast and AV technologies such as Dante, NDI, POE, and 12gSDI to create a scalable and adaptable production workflow. It is designed around a centralized production control room which manages audio mixing, video switching, recording, and live streaming for the attached live room and seperated event space. 
 
 ![Studio System Diagram](studio-system-diagram.png)
 
 ## Audio System
-The audio system is centered around the Allen & Heath SQ-5 digital mixer with Dante networking for flexible routing between rooms.
+The audio system is processed by an Allen & Heath SQ-5 digital mixer with a Dante I/O expansion card for routing audio between rooms.
 
 Components
 - Allen & Heath SQ-5 mixer with 32x32 Dante I/O
-- Dedicated PoE Dante network switch
+- Dedicated PoE Dante network switch (Netgear AV Line M4250)
 - Dante boundary microphones for event hall capture
 - Dante integration with Tesira Forte DSP
 - Talkback paging system
@@ -40,8 +31,9 @@ Components
 - Elgato Stream Deck controller
 
 Camera system
-- 3× BirdDog P120 Full NDI PTZ cameras
-- Magewell NDI-to-SDI converters
+- 2× BirdDog P120 Full NDI PTZ cameras in Event Hall
+- 3x Canon XF605 UHD Camcorders in Live Room
+- 2x Magewell NDI-to-SDI converters
 - PTZOptics SuperJoy camera controller
 
 The system supports NDI camera feeds from the event hall to the studio control room.
@@ -66,7 +58,7 @@ Equipment
 Lighting is controlled through DMX patch panels distributed across the studio and live room, allowing flexible lighting layouts.
 
 ## Production Workstation
-Custom workstation designed for demanding video effects and 4k multi-stream recording and 12bit 4:4:4 color depth. 
+Custom workstation designed for demanding video effects and 4k multi-stream recording for 12bit 4:4:4 color depth. 
 
 Our configuration
 - Intel i9-13900K CPU
