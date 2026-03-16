@@ -1,4 +1,4 @@
-# Multi-Use Broadcast and Recording Studio System Design
+# Multi-Use Broadcast & Recording Studio System Design
 This project documents a proposed audio, video, networking, and lighting architecture for a flexible multi-purpose production environment consisting of a studio, live room, and event hall.
 
 I designed this system with an emphasis on modularity, and as a result upports a variety of production scenarios including:
