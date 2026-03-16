@@ -79,8 +79,8 @@ The workstation runs vMix production software for recording and streaming.
 
 ## Power Protection
 
-UPS Battery backup
-Power Conditioning Unit
+- UPS Battery backup
+- Power Conditioning Unit
 
 ## Technology Used
 
