@@ -1,6 +1,6 @@
 # Multi-Use Broadcast & Recording Studio System Design
-Several years back, I was challenged to build a multi-use production studio under a conservative budge.
-It was tough—but incredibly fun, and the result is a highly adaptable AV + lighting + networking setup that supports a main studio, attached live room, and flexible event hall—all engineered to handle a wide (and unpredictable) range of production needs: such as podcasts, live streams, music production/band tracking, corporate events, and beyond.
+Several years back, I was challenged to build a multi-use production studio under a conservative budget.
+It was tough—but incredibly fun, and the result is a highly adaptive AV + lighting + networking setup that supports a main studio, attached live room, and flexible event hall—all engineered to handle a wide (and unpredictable) range of production needs: such as podcasts, live streams, music production/band tracking, corporate events, and beyond.
 
 I'm sharing this repo to act as a template for others and will include architecture, diagrams, equipment lists, wiring plans, and rationale so others can replicate, adapt, or improve it.
 
